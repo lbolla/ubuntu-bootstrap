@@ -6,12 +6,25 @@ info 'Install packages'
 
 PACKAGES=(
     apt-file
+    autoconf
     curl
     gcc
     git
     htop
     httpie
     iftop
+    imagemagick
+    libgif-dev
+    libgnutls28-dev
+    libgtk-3-dev
+    libjansson-dev
+    libjansson4
+    libjpeg-dev
+    libncurses-dev
+    libpng-dev
+    libtiff5-dev
+    libx11-dev
+    libxpm-dev
     make
     net-tools
     nmap
@@ -19,6 +32,7 @@ PACKAGES=(
     pass
     pkg-config
     stow
+    texinfo
     tmux
     virtualenvwrapper
     zsh
