@@ -36,4 +36,5 @@ SNAPS=(
 
 info 'Install snaps'
 
-snap install --beta ${SNAPS[@]}
+sudo snap install --beta ${SNAPS[@]}
+sudo snap resfresh
