@@ -1,8 +1,10 @@
 #!/bin/bash
 
-debug 'Upgrade'
+debug 'Update'
 sudo apt update 
-sudo apt upgrade 
+
+debug 'Upgrade'
+sudo apt upgrade --yes
 
 info 'Install packages'
 
