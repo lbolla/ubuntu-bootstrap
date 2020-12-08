@@ -6,11 +6,10 @@ IFS=$'\n\t'
 
 THIS_DIR=$(dirname "$0")
 
-info 'Start bootstrap'
 pushd ${THIS_DIR}
 source bootstrap.d/_utils.sh
 source bootstrap.d/pkgs.sh
 source bootstrap.d/apps.sh
 source bootstrap.d/user.sh
+info 'Finished bootstrap'
 popd
-info 'Finish bootstrap'
