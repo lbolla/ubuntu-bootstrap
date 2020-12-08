@@ -1,3 +1,5 @@
+#!/bin/bash
+
 debug 'Upgrade'
 sudo apt update 
 sudo apt upgrade 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Installing fonts'
 
 debug 'Installing Iosevka'

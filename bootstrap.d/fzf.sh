@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Setup fzf'
 
 if [ ! -d ${HOME}/.fzf ]; then

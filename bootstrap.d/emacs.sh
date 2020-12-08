@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Install emacs'
 
 EMACS_D=${HOME}/src/git.savannah.gnu.org/emacs

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Install rclone'
 
 # See https://rclone.org/downloads/

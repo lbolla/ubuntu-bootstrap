@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Setup git'
 
 if [ -f /usr/share/doc/git/contrib/diff-highlight/diff-highlight ]; then

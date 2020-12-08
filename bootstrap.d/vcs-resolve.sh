@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Install vcs-resolve'
 
 VCS_RESOLVE_D=${HOME}/src/github.com/lbolla/vcs-resolve

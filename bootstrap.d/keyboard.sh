@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Setup keyboard'
 
 if [ $(grep -q 'XKBOPTIONS=""' /etc/default/keyboard) ]; then

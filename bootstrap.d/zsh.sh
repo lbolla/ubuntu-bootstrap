@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Setup zsh'
 
 ZSH_EXEC="/usr/bin/zsh"

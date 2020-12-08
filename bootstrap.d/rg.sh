@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Install rg'
 
 # See https://github.com/BurntSushi/ripgrep/releases/

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Setup private'
 
 PRIVATE_PATH="${HOME}/Private"

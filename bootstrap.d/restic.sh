@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Install restic'
 
 # See https://github.com/restic/restic/releases/

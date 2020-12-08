@@ -1,3 +1,5 @@
+#!/bin/bash
+
 info 'Setup dotfiles'
 
 DOTFILES_D=$HOME/src/github.com/lbolla/dotfiles/
