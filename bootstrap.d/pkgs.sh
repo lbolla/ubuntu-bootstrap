@@ -33,6 +33,7 @@ PACKAGES=(
     pkg-config
     stow
     texinfo
+    texlive
     tmux
     virtualenvwrapper
     zsh
