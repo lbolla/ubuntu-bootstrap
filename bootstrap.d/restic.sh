@@ -2,8 +2,7 @@ info 'Install restic'
 
 # See https://github.com/restic/restic/releases/
 
-RESTIC_EXEC='/usr/local/bin/restic'
-if [ ! -x ${RESTIC_EXEC} ]; then
+if ! command -v restic &> /dev/null; then
 
     VERSION=0.11.0
     NAME=restic_${VERSION}_linux_amd64
