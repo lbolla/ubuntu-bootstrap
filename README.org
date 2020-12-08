@@ -1,0 +1,1 @@
+Setup a freshly installed Ubuntu machine.
