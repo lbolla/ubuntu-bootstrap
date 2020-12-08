@@ -9,5 +9,6 @@ THIS_DIR=$(dirname "$0")
 pushd ${THIS_DIR}
 source bootstrap.d/_utils.sh
 source bootstrap.d/pkgs.sh
+source bootstrap.d/apps.sh
 source bootstrap.d/user.sh
 popd

@@ -30,8 +30,10 @@ sudo apt install --yes ${PACKAGES[@]}
 debug 'Autoremove'
 sudo apt autoremove --yes
 
-source bootstrap.d/fzf.sh
-source bootstrap.d/git.sh
-source bootstrap.d/rclone.sh
-source bootstrap.d/restic.sh
-source bootstrap.d/rg.sh
+SNAPS=(
+    authy
+)
+
+info 'Install snaps'
+
+snap install --beta ${SNAPS[@]}
