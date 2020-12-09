@@ -14,6 +14,7 @@ PACKAGES=(
     curl
     gcc
     git
+    gstreamer1.0-libav
     htop
     httpie
     iftop
