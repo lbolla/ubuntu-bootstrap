@@ -1,10 +1,9 @@
 #!/bin/bash
 
-info 'Install restic'
-
 # See https://github.com/restic/restic/releases/
 
 if ! command -v restic &> /dev/null; then
+    info 'Install restic'
 
     VERSION=0.11.0
     NAME=restic_${VERSION}_linux_amd64
@@ -19,3 +18,7 @@ if ! command -v restic &> /dev/null; then
 
 fi
 
+if [ $_bootstrap_upgrade -eq 1 ]; then
+    debug 'Upgrade restic'
+    sudo restic self-update
+fi

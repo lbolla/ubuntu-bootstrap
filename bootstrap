@@ -1,10 +1,20 @@
 #!/bin/bash
 
 # Strict mode
-set -euo pipefail
+set -o pipefail -o errexit -o nounset
 IFS=$'\n\t'
 
 THIS_DIR=$(dirname "$0")
+
+# Parse arguments
+_bootstrap_upgrade=0
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        -u|--upgrade) _bootstrap_upgrade=1 ;;
+        *) echo "Unknown parameter: $1"; exit 1 ;;
+    esac
+    shift
+done
 
 pushd ${THIS_DIR}
 source bootstrap.d/_utils.sh
