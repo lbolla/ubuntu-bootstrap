@@ -3,6 +3,7 @@
 info 'Install aws'
 
 # See https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install
+# and https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst
 
 if ! command -v aws &> /dev/null; then
     pushd /tmp

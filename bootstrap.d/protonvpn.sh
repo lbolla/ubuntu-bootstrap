@@ -1,9 +1,10 @@
 #!/bin/bash
 
-PROTONVPN_VENV=${HOME}/.virtualenvs/protonvpn
-PROTONVPN_EXEC=${PROTONVPN_VENV}/bin/protonvpn
+info 'Install protonvpn'
 
-if [ ! -x ${PROTONVPN_EXEC} ]; then
+PROTONVPN_VENV=${HOME}/.virtualenvs/protonvpn
+
+if [ ! -d ${PROTONVPN_VENV} ]; then
     virtualenv ${PROTONVPN_VENV}
-    ${PROTONVPN_VENV}/bin/pip install protonvpn-cli
 fi
+${PROTONVPN_VENV}/bin/pip install --upgrade protonvpn-cli

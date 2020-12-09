@@ -1,5 +1,7 @@
 #!/bin/bash
 
+info 'Install passff-host'
+
 # See https://github.com/passff/passff-host
 
 PASSFF_EXEC=/home/lbolla/.mozilla/native-messaging-hosts/passff.py
