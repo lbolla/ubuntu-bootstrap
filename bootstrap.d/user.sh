@@ -5,6 +5,7 @@ info 'Create directories'
 DIRS=(
     bin
     etc
+    scratch
     src
     var
 )
