@@ -54,6 +54,7 @@ sudo apt autoremove --yes
 SNAPS=(
     authy
     chromium
+    # teams
 )
 
 info 'Install snaps'
