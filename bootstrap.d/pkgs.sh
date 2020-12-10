@@ -39,6 +39,7 @@ PACKAGES=(
     stow
     texinfo
     texlive
+    texlive-latex-extra
     tmux
     virtualenvwrapper
     zsh
@@ -52,9 +53,11 @@ sudo apt autoremove --yes
 
 SNAPS=(
     authy
+    chromium
 )
 
 info 'Install snaps'
 
-sudo snap install --beta ${SNAPS[@]}
-sudo snap refresh
+for s in ${SNAPS[@]}; do
+    sudo snap install --beta ${s}
+done
