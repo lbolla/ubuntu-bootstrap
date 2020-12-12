@@ -31,6 +31,7 @@ PACKAGES=(
     libx11-dev
     libxpm-dev
     make
+    mpv
     net-tools
     nmap
     openssh-server
