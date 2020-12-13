@@ -29,6 +29,7 @@ PACKAGES=(
     libpng-dev
     libtiff5-dev
     libx11-dev
+    libxml2-dev
     libxpm-dev
     make
     mpv
