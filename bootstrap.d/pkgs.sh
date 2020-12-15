@@ -38,6 +38,7 @@ PACKAGES=(
     openssh-server
     pass
     pkg-config
+    shellcheck
     stow
     texinfo
     texlive
