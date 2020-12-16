@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Strict mode
-set -o pipefail -o errexit -o nounset
-IFS=$'\n\t'
-
 debug 'Update'
 sudo apt update 
 
