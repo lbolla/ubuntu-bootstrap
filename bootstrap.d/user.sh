@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 info 'Create directories'
 
@@ -10,8 +10,8 @@ DIRS=(
     var
 )
 
-for d in ${DIRS[@]}; do
-    mkdir -p ${HOME}/${d}
+for d in "${DIRS[@]}"; do
+    mkdir -p "${HOME}/${d}"
 done
 
 source bootstrap.d/keyboard.sh
