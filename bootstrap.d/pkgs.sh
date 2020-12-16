@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Strict mode
+set -o pipefail -o errexit -o nounset
+IFS=$'\n\t'
+
 debug 'Update'
 sudo apt update 
 
@@ -53,15 +57,3 @@ sudo apt install --yes ${PACKAGES[@]}
 
 debug 'Autoremove'
 sudo apt autoremove --yes
-
-SNAPS=(
-    authy
-    chromium
-    # teams
-)
-
-info 'Install snaps'
-
-for s in ${SNAPS[@]}; do
-    sudo snap install --beta ${s}
-done

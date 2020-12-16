@@ -19,6 +19,7 @@ done
 pushd "${THIS_DIR}"
 source bootstrap.d/_utils.sh
 source bootstrap.d/pkgs.sh
+source bootstrap.d/snaps.sh
 source bootstrap.d/fonts.sh
 source bootstrap.d/user.sh
 source bootstrap.d/apps.sh
