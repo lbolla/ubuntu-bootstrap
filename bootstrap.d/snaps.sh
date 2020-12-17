@@ -1,19 +1,12 @@
 #!/bin/bash
 
-SNAPS=(
-    authy
-)
-
 info 'Install snaps'
-
-for s in "${SNAPS[@]}"; do
-    sudo snap install --beta "${s}"
-done
 
 case "$(hostname)" in
     "jiren")
         # Personal stuff
         SNAPS=(
+            authy
             chromium
             teams
         )
@@ -24,6 +17,7 @@ case "$(hostname)" in
     "frieza")
         # YouGov stuff
         SNAPS=(
+            authy
             slack
         )
         for s in "${SNAPS[@]}"; do
@@ -32,4 +26,6 @@ case "$(hostname)" in
         ;;
 esac
 
-sudo snap refresh
+if [ "$_bootstrap_upgrade" -eq 1 ]; then
+    sudo snap refresh
+fi
