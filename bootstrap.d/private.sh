@@ -2,9 +2,9 @@
 
 info 'Setup private'
 
-PRIVATE_PATH="${HOME}/Private"
+PRIVATE_D="${HOME}/Private"
 
-if [ ! -d "${PRIVATE_PATH}" ]; then
+if [ ! -d "${PRIVATE_D}" ]; then
 
     REPO="/media/${USER}/PHILIPS UFD/backup"
 
@@ -14,10 +14,11 @@ if [ ! -d "${PRIVATE_PATH}" ]; then
         read
     done
 
-    restic -r "${REPO}" restore latest --path "${PRIVATE_PATH}" --target "${PRIVATE_PATH}"
+    restic -r "${REPO}" restore latest --tags personal --target "/tmp/Private"
+    mv "/tmp/Private/home/lbolla/Private" "${PRIVATE_D}"
 
 fi
 
-pushd "${PRIVATE_PATH}"
+pushd "${PRIVATE_D}"
 ./setup.sh
 popd
