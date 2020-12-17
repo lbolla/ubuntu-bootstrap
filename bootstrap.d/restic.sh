@@ -18,7 +18,7 @@ if ! command -v restic &> /dev/null; then
 
 fi
 
-if [ $_bootstrap_upgrade -eq 1 ]; then
+if [ "$_bootstrap_upgrade" -eq 1 ]; then
     debug 'Upgrade restic'
     sudo restic self-update
 fi

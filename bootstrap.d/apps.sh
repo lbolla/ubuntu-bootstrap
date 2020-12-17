@@ -7,4 +7,9 @@ source bootstrap.d/rclone.sh
 source bootstrap.d/restic.sh
 source bootstrap.d/rg.sh
 source bootstrap.d/vcs-resolve.sh
-source bootstrap.d/protonvpn.sh
+
+case "$(hostname)" in
+    "jiren")
+        source bootstrap.d/protonvpn.sh
+        ;;
+esac

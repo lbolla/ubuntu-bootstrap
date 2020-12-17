@@ -2,7 +2,7 @@
 
 # See https://github.com/BurntSushi/ripgrep/releases/
 
-if [ ! -f $HOME/bin/rg ]; then
+if [ ! -f "${HOME}/bin/rg" ]; then
     info 'Install rg'
 
     VERSION=12.1.1
@@ -11,8 +11,8 @@ if [ ! -f $HOME/bin/rg ]; then
     curl -L https://github.com/BurntSushi/ripgrep/releases/download/${VERSION}/${TARBALL} -o /tmp/${TARBALL}
 
     pushd /opt
-    sudo tar xf /tmp/${TARBALL}
-    ln -sf /opt/${NAME}/rg ${HOME}/bin/rg
-    rm -f /tmp/${TARBALL}
+    sudo tar xf "/tmp/${TARBALL}"
+    ln -sf "/opt/${NAME}/rg" "${HOME}/bin/rg"
+    rm -f "/tmp/${TARBALL}"
     popd
 fi
