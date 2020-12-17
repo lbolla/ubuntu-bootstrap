@@ -6,7 +6,7 @@ PRIVATE_PATH="${HOME}/Private"
 
 if [ ! -d "${PRIVATE_PATH}" ]; then
 
-    REPO="/media/${USER}/PHILIPS UFD"
+    REPO="/media/${USER}/PHILIPS UFD/backup"
 
     while [ ! -d "${REPO}" ]; do
         warn 'No usbkey found'
