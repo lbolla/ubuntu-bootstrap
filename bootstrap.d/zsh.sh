@@ -25,5 +25,5 @@ debug 'Install zsh-autosuggestions'
 ZSH_AUTOSUGGESTIONS_D=${HOME}/src/github.com/zsh-users/zsh-autosuggestions/
 if [ ! -d "${ZSH_AUTOSUGGESTIONS_D}" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_AUTOSUGGESTIONS_D}"
-    ln -sf "${ZSH_AUTOSUGGESTIONS_D}" "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+    ln -sf "${ZSH_AUTOSUGGESTIONS_D}" "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 fi
