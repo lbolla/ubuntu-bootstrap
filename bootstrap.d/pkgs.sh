@@ -12,6 +12,7 @@ PACKAGES=(
     apt-file
     autoconf
     curl
+    dialog
     gcc
     git
     gstreamer1.0-libav
