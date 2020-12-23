@@ -13,7 +13,7 @@ if ! command -v aws &> /dev/null; then
     popd
 fi
 
-if [ $_bootstrap_upgrade -eq 1 ]; then
+if [[ "$_bootstrap_upgrade" -eq 1 ]]; then
     debug 'Upgrade aws'
     pushd /tmp
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
