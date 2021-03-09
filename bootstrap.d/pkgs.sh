@@ -11,6 +11,7 @@ info 'Install packages'
 PACKAGES=(
     apt-file
     autoconf
+    clang-format
     curl
     dialog
     gcc
