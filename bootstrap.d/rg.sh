@@ -12,6 +12,7 @@ if [ ! -f "${HOME}/bin/rg" ]; then
 
     pushd /opt
     sudo tar xf "/tmp/${TARBALL}"
+    mkdir -p "${HOME}/bin"
     ln -sf "/opt/${NAME}/rg" "${HOME}/bin/rg"
     rm -f "/tmp/${TARBALL}"
     popd
