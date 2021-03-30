@@ -14,7 +14,7 @@ if [ ! -d "${PRIVATE_D}" ]; then
         read
     done
 
-    restic -r "${REPO}" restore latest --tags personal --target "/tmp/Private"
+    restic -r "${REPO}" restore latest --tag personal --target "/tmp/Private"
     mv "/tmp/Private/home/lbolla/Private" "${PRIVATE_D}"
 
 fi
