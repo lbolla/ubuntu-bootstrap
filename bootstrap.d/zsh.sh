@@ -27,3 +27,10 @@ if [ ! -d "${ZSH_AUTOSUGGESTIONS_D}" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_AUTOSUGGESTIONS_D}"
     ln -sf "${ZSH_AUTOSUGGESTIONS_D}" "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 fi
+
+debug 'Install fzf-tab'
+# See https://github.com/Aloxaf/fzf-tab
+FZF_TAB_D=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+if [ ! -d "${FZF_TAB_D}" ]; then
+    git clone https://github.com/Aloxaf/fzf-tab ${FZF_TAB_D}
+fi
