@@ -20,6 +20,8 @@ fi
 if [ -f "${HOME}/.zshrc.pre-oh-my-zsh" ]; then
     mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
 fi
+# We'll use the one in dotfiles
+mv "${HOME}/.zshrc" "${HOME}/.zshrc.original"
 
 debug 'Install zsh-autosuggestions'
 ZSH_AUTOSUGGESTIONS_D=${HOME}/src/github.com/zsh-users/zsh-autosuggestions/
