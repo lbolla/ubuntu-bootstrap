@@ -7,10 +7,6 @@ if [ ! -x ${ZSH_EXEC} ]; then
     die "No zsh found"
 fi
 
-if [ "${SHELL}" != "${ZSH_EXEC}" ]; then
-    chsh -s "${ZSH_EXEC}" "${USER}"
-fi
-
 info 'Setup oh-my-zsh'
 
 if [ ! -d "${HOME}/.oh-my-zsh/" ]; then
