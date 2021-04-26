@@ -15,6 +15,7 @@ for d in "${DIRS[@]}"; do
 done
 
 source bootstrap.d/keyboard.sh
+source bootstrap.d/gnome.sh
 source bootstrap.d/zsh.sh
 source bootstrap.d/dotfiles.sh
 source bootstrap.d/private.sh
