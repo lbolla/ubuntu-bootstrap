@@ -31,5 +31,13 @@ debug 'Install fzf-tab'
 FZF_TAB_D=${HOME}/src/github.com/Aloxaf/fzf-tab/
 if [ ! -d "${FZF_TAB_D}" ]; then
     git clone https://github.com/Aloxaf/fzf-tab ${FZF_TAB_D}
-    ln -sf "${ZSH_AUTOSUGGESTIONS_D}" "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/plugins/fzf-tab"
+    ln -sf "${FZF_TAB_D}" "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/plugins/fzf-tab"
+fi
+
+debug 'Install lxd-completion-zsh'
+# See https://github.com/endaaman/lxd-completion-zsh
+LXD_COMPLETION_D=${HOME}/src/github.com/endaaman/lxd-completion-zsh/
+if [ ! -d "${LXD_COMPLETION_D}" ]; then
+    git clone https://github.com/endaaman/lxd-completion-zsh ${LXD_COMPLETION_D}
+    ln -sf "${LXD_COMPLETION_D}" "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/plugins/lxd-completion-zsh"
 fi
