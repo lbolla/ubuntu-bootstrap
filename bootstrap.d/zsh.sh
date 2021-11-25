@@ -41,3 +41,9 @@ if [ ! -d "${LXD_COMPLETION_D}" ]; then
     git clone https://github.com/endaaman/lxd-completion-zsh ${LXD_COMPLETION_D}
     ln -sf "${LXD_COMPLETION_D}" "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/plugins/lxd-completion-zsh"
 fi
+
+debug 'Install lxd-completion-zsh'
+POWERLEVEL10K_D=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+if [ ! -d "${LXD_COMPLETION_D}" ]; then
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${POWERLEVEL10K_D}
+fi
