@@ -12,6 +12,7 @@ PACKAGES=(
     apt-file
     autoconf
     clang-format
+    clangd
     curl
     dialog
     gcc

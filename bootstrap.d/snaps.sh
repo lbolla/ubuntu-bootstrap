@@ -8,6 +8,8 @@ case "$(hostname)" in
         SNAPS=(
             authy
             chromium
+            go
+            lxc
             teams
         )
         for s in "${SNAPS[@]}"; do
